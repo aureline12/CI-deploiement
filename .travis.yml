@@ -1,0 +1,10 @@
+sudo: required
+services:
+  - docker
+
+script:
+  - docker build -t node .
+  - docker images node
+  # - docker run -d -p 4000:4000 node
+  # - docker ps -a
+  # - docker exec node npm test
